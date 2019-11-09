@@ -1,0 +1,1 @@
+Simple chrome extension that returns "close all tabs" feature to Google Chrome

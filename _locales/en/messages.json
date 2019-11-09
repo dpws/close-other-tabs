@@ -1,0 +1,26 @@
+{
+  "name": {
+    "message": "Close other tabs",
+    "description": "Extension name."
+  },
+  "title": {
+    "message": "Close other tabs",
+    "description": "Extension title."
+  },
+  "description": {
+    "message": "Close all tabs except active in one click!",
+    "description": "Extension description."
+  },
+  "confirmation": {
+    "message": "Are you sure want to close other tabs?",
+    "description": "Tabs closing confirmation."
+  },
+  "yes": {
+    "message": "Yes",
+    "description": "Confirmation agreed."
+  },
+  "no": {
+    "message": "No",
+    "description": "Confirmation decline."
+  }
+}

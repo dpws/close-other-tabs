@@ -1,0 +1,26 @@
+{
+  "name": {
+    "message": "Закрыть другие вкладки",
+    "description": "Extension name."
+  },
+  "title": {
+    "message": "Закрыть другие вкладки",
+    "description": "Extension title."
+  },
+  "description": {
+    "message": "Закрывайте все вкладки, кроме активной, в один клик.",
+    "description": "Extension description."
+  },
+  "confirmation": {
+    "message": "Вы уверены, что хотите закрыть другие вкладки?",
+    "description": "Tabs closing confirmation."
+  },
+  "yes": {
+    "message": "Да",
+    "description": "Confirmation agreed."
+  },
+  "no": {
+    "message": "Нет",
+    "description": "Confirmation decline."
+  }
+}
