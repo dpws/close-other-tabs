@@ -26,5 +26,9 @@
   "noTabs": {
     "message": "There are no available tabs for close :(",
     "description": "No tabs."
+  },
+  "tabsToBeClosed": {
+    "message": "Tabs to be closed",
+    "description": "Tabs to be closed."
   }
 }

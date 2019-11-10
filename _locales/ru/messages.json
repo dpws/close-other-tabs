@@ -26,5 +26,9 @@
   "noTabs": {
     "message": "Нечего закрывать :(",
     "description": "No tabs."
+  },
+  "tabsToBeClosed": {
+    "message": "Будет закрыто вкладок:",
+    "description": "Tabs to be closed."
   }
 }

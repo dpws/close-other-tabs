@@ -7,11 +7,10 @@ window.addEventListener('load', () => {
                 parent.close();
                 return;
             }
-            const agree = document.getElementById('agree');
-            const decline = document.getElementById('decline');
 
-            agree.addEventListener('click', close_other_tabs);
-            decline.addEventListener('click', () => parent.close());
+            document.getElementById('count-container').textContent = count;
+            document.getElementById('agree').addEventListener('click', close_other_tabs);
+            document.getElementById('decline').addEventListener('click', () => parent.close());
         })
         .catch(err => console.error(err))
 });
