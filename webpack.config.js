@@ -13,7 +13,6 @@ var fileExtensions = ["jpg", "jpeg", "png", "gif", "eot", "otf", "svg", "ttf", "
 
 var options = {
     mode: process.env.NODE_ENV || "development",
-    watch: true,
     entry: {
         confirm: './src/js/confirm.js',
         'no-tabs': './src/js/no-tabs.js',
