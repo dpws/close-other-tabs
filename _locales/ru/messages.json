@@ -22,5 +22,9 @@
   "no": {
     "message": "Нет",
     "description": "Confirmation decline."
+  },
+  "noTabs": {
+    "message": "Нечего закрывать :(",
+    "description": "No tabs."
   }
 }
