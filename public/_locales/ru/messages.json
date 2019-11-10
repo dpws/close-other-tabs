@@ -23,6 +23,10 @@
     "message": "Нет",
     "description": "Confirmation decline."
   },
+  "close": {
+    "message": "Закрыть",
+    "description": "Close."
+  },
   "noTabs": {
     "message": "Нечего закрывать :(",
     "description": "No tabs."
@@ -30,5 +34,9 @@
   "tabsToBeClosed": {
     "message": "Будет закрыто вкладок:",
     "description": "Tabs to be closed."
+  },
+  "confirmClosing": {
+    "message": "Запрашивать подтверждение",
+    "description": "Ask confirmation before closing."
   }
 }

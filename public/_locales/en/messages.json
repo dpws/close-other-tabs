@@ -23,6 +23,10 @@
     "message": "No",
     "description": "Confirmation decline."
   },
+  "close": {
+    "message": "Close",
+    "description": "Close."
+  },
   "noTabs": {
     "message": "There are no available tabs for close :(",
     "description": "No tabs."
@@ -30,5 +34,9 @@
   "tabsToBeClosed": {
     "message": "Tabs to be closed",
     "description": "Tabs to be closed."
+  },
+  "confirmClosing": {
+    "message": "Ask confirmation",
+    "description": "Ask confirmation before closing."
   }
 }

@@ -1,0 +1,182 @@
+//$agree-bg-color: #238b49;
+$agree-bg-color: #6bb878;
+$agree-bg-color_hover: darken($agree-bg-color, 10);
+$agree-text-color: #ffffff;
+
+$decline-bg-color: #f1938c;
+$decline-bg-color_hover: darken($decline-bg-color, 10);
+$decline-text-color: #ffffff;
+
+$color: #696969;
+
+body {
+  color: $color;
+
+  &.popup {
+    width: 400px;
+  }
+}
+
+.pull-right {
+  float: right;
+}
+
+.title {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 20px 0 20px 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  min-width: 150px;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-weight: bold;
+
+  &.btn-agree {
+    color: $agree-text-color;
+    background-color: $agree-bg-color;
+
+    &:hover {
+      background-color: $agree-bg-color_hover;
+    }
+  }
+
+  &.btn-decline {
+    color: $decline-text-color;
+    background-color: $decline-bg-color;
+
+    &:hover {
+      background-color: $decline-bg-color_hover;
+    }
+  }
+}
+
+.confirmation-popup {
+  .tabs-count-block {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+
+.switch {
+  display: flex;
+  align-items: center;
+  //https://codepen.io/electricgarden/pen/GRRRexM
+  input[type=checkbox] {
+    --height: 24px;
+    --inset: 2px;
+    --border-size: 3px;
+    --color-hover: #dcdcdc;
+    --color-bg: hsl(0, 0%, 64%);
+    --color-bg-checked: hsl(201, 100%, 50%);
+    --color-knob: #fff;
+    --knob-size: calc(var(--height) - var(--inset) * 2);
+    --width: calc(var(--height) * 2 - var(--inset) * 2);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--height);
+    border: var(--border-size) solid transparent;
+    transition: background 0.3s ease;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover, &:focus {
+      background: var(--color-hover);
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--color-bg);
+      transition: background 0.3s ease;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      border-radius: 100%;
+      top: calc(var(--inset));
+      left: calc(var(--inset));
+      width: var(--knob-size);
+      height: var(--knob-size);
+      background: var(--color-knob);
+      transition: transform 0.3s ease;
+    }
+
+    &:checked:before {
+      background: var(--color-bg-checked);
+    }
+
+    &:checked:after {
+      transform: translateX(100%);
+    }
+
+  }
+
+  label {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #444;
+  }
+}
+
+header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    img {
+      height: 32px;
+      margin-right: 15px;
+    }
+  }
+
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid lightgray;
+
+  .github-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+    }
+
+    img {
+      display: inline-block;
+      height: 16px;
+      margin-right: 7px;
+    }
+  }
+}
