@@ -38,5 +38,13 @@
   "confirmClosing": {
     "message": "Ask confirmation",
     "description": "Ask confirmation before closing."
+  },
+  "stopAskingConfirmation": {
+    "message": "Do not ask",
+    "description": "Do not ask again."
+  },
+  "canChangeInSetting": {
+    "message": "You can change this in settings",
+    "description": "You can change this in settings."
   }
 }

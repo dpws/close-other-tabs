@@ -38,5 +38,13 @@
   "confirmClosing": {
     "message": "Запрашивать подтверждение",
     "description": "Ask confirmation before closing."
+  },
+  "stopAskingConfirmation": {
+    "message": "Больше не спрашивать",
+    "description": "Do not ask again."
+  },
+  "canChangeInSetting": {
+    "message": "Вы сможете изменить это в настройках",
+    "description": "You can change this in settings."
   }
 }

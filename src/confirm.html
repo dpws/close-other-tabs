@@ -15,6 +15,15 @@ ${require('./html/header.html')}
     <button data-i18n="yes" class="btn btn-agree" id="agree"></button>
     <button data-i18n="no" class="btn btn-decline pull-right" id="decline"></button>
 </div>
+<div class="stop-asking">
+    <div>
+        <input type="checkbox" name="stopAsking" id="stopAsking">
+        <label for="stopAsking" data-i18n="stopAskingConfirmation"></label>
+    </div>
+    <div class="hint">
+        <small data-i18n="canChangeInSetting"></small>
+    </div>
+</div>
 ${require('./html/footer.html')}
 </body>
 </html>
