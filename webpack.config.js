@@ -75,7 +75,7 @@ var options = {
     },
     plugins: [
         new Dotenv(),
-        //new CleanWebpackPlugin(),
+        process.env.NODE_ENV === 'production' && new CleanWebpackPlugin(),
         new ChromeExtensionReloadPlugin(),
         new webpack.EnvironmentPlugin(["NODE_ENV"]),
         new HtmlWebpackPlugin({
