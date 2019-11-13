@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 ChromeTools.onCommandReceived(command => {
     switch (command) {
         case 'close-other-tabs':
-            closeOtherTabs();
+            closeOtherTabs(false);
             break;
     }
 });

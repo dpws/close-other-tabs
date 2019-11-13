@@ -13,11 +13,14 @@ window.addEventListener('load', async () => {
     }
 });
 
-export async function closeOtherTabs() {
+export async function closeOtherTabs(closePopup = true) {
     const tabs = await ChromeTools.getAllTabs();
 
     for (let tab of tabs) {
         ChromeTools.closeTab(tab);
     }
 
+    if(closePopup) {
+        parent.close();
+    }
 }

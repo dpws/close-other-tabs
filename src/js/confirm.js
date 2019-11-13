@@ -11,8 +11,7 @@ window.addEventListener('load', async () => {
         .then(options => {
             currentOptions = options;
             if (!options.askConfirmation) {
-                closeOtherTabs();
-                parent.close();
+                closeOtherTabs(true);
             }
         });
 
@@ -26,8 +25,7 @@ window.addEventListener('load', async () => {
                 askConfirmation: false
             })
         }
-        closeOtherTabs();
-        parent.close();
+        closeOtherTabs(true);
     });
 
     document.getElementById('decline').addEventListener('click', () => {
