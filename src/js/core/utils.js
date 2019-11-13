@@ -1,9 +1,9 @@
-import {syncOptionsFromStorage, syncOptionsToStorage} from "./ChromeTools";
+import ChromeTools from "./ChromeTools";
 
 export const getOptions = () => {
-    return syncOptionsFromStorage({
+    return ChromeTools.syncOptionsFromStorage({
         askConfirmation: true
     });
 };
 
-export const setOptions = syncOptionsToStorage;
+export const setOptions = ChromeTools.syncOptionsToStorage;

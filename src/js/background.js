@@ -1,20 +1,27 @@
-import {getAllTabs} from "./core/ChromeTools";
+import ChromeTools from "./core/ChromeTools";
+import {closeOtherTabs} from "./core/shared";
+
+guessAvailability();
 
 window.addEventListener('load', () => {
     guessAvailability();
-    chrome.tabs.onCreated.addListener(guessAvailability);
-    chrome.tabs.onActiveChanged.addListener(guessAvailability);
-    chrome.tabs.onDetached.addListener(guessAvailability);
-    chrome.tabs.onAttached.addListener(guessAvailability);
-    chrome.tabs.onRemoved.addListener(guessAvailability);
+    ChromeTools.onValuableTabAction(guessAvailability);
+});
+
+ChromeTools.onCommandReceived(command => {
+    switch (command) {
+        case 'close-other-tabs':
+            closeOtherTabs();
+            break;
+    }
 });
 
 async function guessAvailability() {
-    const tabs = await getAllTabs();
+    const tabs = await ChromeTools.getAllTabs();
     const count = tabs.length;
-    console.log('Tabs', count);
+    console.log('Tabs: '+count);
     if (count > 0) {
-        chrome.browserAction.setIcon({
+        ChromeTools.setIcon({
             path: {
                 "16": "icons/16.png",
                 "32": "icons/32.png",
@@ -22,15 +29,15 @@ async function guessAvailability() {
                 "128": "icons/128.png",
             }
         });
-        chrome.browserAction.setPopup({popup: 'confirm.html'});
+        ChromeTools.setPopup({popup: 'confirm.html'});
     } else {
-        chrome.browserAction.setIcon({path: {
+        ChromeTools.setIcon({path: {
                 "16": "icons/16_disabled.png",
                 "32": "icons/32.png",
                 "48": "icons/48.png",
                 "128": "icons/128.png",
             }});
-        chrome.browserAction.setPopup({popup: 'no-tabs.html'});
+        ChromeTools.setPopup({popup: 'no-tabs.html'});
     }
 
 
