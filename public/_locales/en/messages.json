@@ -11,6 +11,10 @@
     "message": "Close all tabs except active in one click!",
     "description": "Extension description."
   },
+  "hotkeyDescription": {
+    "message": "Close other tabs",
+    "description": "Hotkey description."
+  },
   "confirmation": {
     "message": "Are you sure want to close other tabs?",
     "description": "Tabs closing confirmation."

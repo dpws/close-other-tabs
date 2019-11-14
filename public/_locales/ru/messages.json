@@ -11,6 +11,10 @@
     "message": "Закрывайте все вкладки, кроме активной, в один клик.",
     "description": "Extension description."
   },
+  "hotkeyDescription": {
+    "message": "Закрыть другие вкладки",
+    "description": "Hotkey description."
+  },
   "confirmation": {
     "message": "Вы уверены, что хотите закрыть другие вкладки?",
     "description": "Tabs closing confirmation."
